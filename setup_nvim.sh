@@ -12,3 +12,5 @@ cd neovim
 make
 make install
 
+cd /tmp
+rm -rf /tmp/neovim
