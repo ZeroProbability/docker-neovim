@@ -1,0 +1,14 @@
+# Keymaps for when we're in command mode (e.g., after hitting ESC)
+set keymap vi-command
+
+# puts edit-mode to vi (or vi-command) by default for every new command
+set editing-mode vi
+#set editing-mode vi-command
+
+# Turns off 8th bit stripping
+set convert-meta on
+
+# This option disables tab completion in ipython and groovysh - so disabled it
+#"\t": menu-complete  
+
+#V: edit-and-execute-command
