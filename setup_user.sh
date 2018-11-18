@@ -6,3 +6,5 @@ chown anbu /home/anbu
 chgrp anbu /home/anbu
 echo "root:Docker!" | chpasswd
 
+cp /.tmux.conf /home/anbu
+
