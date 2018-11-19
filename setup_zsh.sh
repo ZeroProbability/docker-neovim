@@ -104,6 +104,9 @@ set -o vi
 alias vi=nvim
 alias vim=nvim
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 echo 'root password is "Docker!"'
 EOF
 find /home/anbu | xargs chown anbu 
