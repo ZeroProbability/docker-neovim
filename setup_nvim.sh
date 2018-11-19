@@ -7,7 +7,7 @@ apt-get remove -y vim vim-runtime gvim vim-tiny vim-common vim-gui-common
 
 cd /tmp 
 git clone https://github.com/neovim/neovim 
-git reset --hard v0.3.0
+git reset --hard v0.3.1
 cd neovim
 make
 make install
