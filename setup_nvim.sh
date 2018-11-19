@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get install -y ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip 
-apt-get install -y python3 python3-pip # needed by ultisnip
+apt-get install -y python3 python3-pip python-dev python-pip # needed by ultisnip
 
 apt-get remove -y vim vim-runtime gvim vim-tiny vim-common vim-gui-common
 
@@ -17,3 +17,6 @@ rm -rf /tmp/neovim
 
 # neovim package is needed for neovim to use python
 pip3 install neovim
+pip install pynvim
+
+gem install neovim
