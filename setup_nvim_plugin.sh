@@ -9,11 +9,14 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/vim-easy-align'
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'itchyny/lightline.vim'
-Plug ''
+Plug 'ZeroProbability/vim-snippets'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1
 EOF
 
 pip3 install neovim
