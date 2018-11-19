@@ -17,6 +17,8 @@ rm -rf /tmp/neovim
 
 # neovim package is needed for neovim to use python
 pip3 install neovim
-pip install pynvim
+
+pip2 install pynvim
+pip3 install pynvim
 
 gem install neovim
