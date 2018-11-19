@@ -12,11 +12,21 @@ Plug 'junegunn/vim-easy-align'
 Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'itchyny/lightline.vim'
-Plug 'ZeroProbability/vim-snippets'
+Plug 'honza/vim-snippets'
+Plug 'ZeroProbability/my-vim-snippets'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
+
+" Trigger configuration. 
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 EOF
 
 pip3 install neovim
