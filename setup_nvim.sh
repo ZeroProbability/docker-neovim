@@ -9,7 +9,7 @@ cd /tmp
 git clone https://github.com/neovim/neovim 
 git reset --hard v0.3.1
 cd neovim
-make
+make CMAKE_BUILD_TYPE=Release
 make install
 
 cd /tmp
